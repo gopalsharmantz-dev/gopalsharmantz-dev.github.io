@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
 :root {
     --bg: #080b12;
     --card: #10151f;
@@ -23,7 +22,7 @@ html {
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: "Space Grotesk", sans-serif;
     background: var(--bg);
     color: var(--text);
     line-height: 1.7;
@@ -444,7 +443,7 @@ section {
     padding: 14px;
     color: white;
     margin-bottom: 15px;
-    font-family: inherit;
+    font-family: "Space Grotesk", sans-serif;
     outline: none;
 }
 
