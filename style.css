@@ -3,22 +3,18 @@
     /* Background */
     --bg: #080B12;
     --bg-soft: #0B1018;
-
     /* Cards */
     --card: #101621;
     --card2: #141B28;
-
     /* Text */
     --text: #F7F8FC;
     --muted: #98A2B3;
     --muted-light: #B8C0CF;
-
     /* Blue Brand Palette */
     --primary: #2196F3;
     --primary-dark: #0D47A1;
     --secondary: #90CAF9;
     --highlight: #E3F2FD;
-
     /* Gradient */
     --gradient: linear-gradient(
         100deg,
@@ -26,7 +22,6 @@
         #2196F3 50%,
         #90CAF9 100%
     );
-
     /* Borders */
     --border: rgba(144, 202, 249, 0.10);
     --border-hover: rgba(33, 150, 243, 0.50);
