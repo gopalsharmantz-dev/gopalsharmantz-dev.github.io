@@ -693,12 +693,20 @@ p {
         rgba(33, 150, 243, 0.12);
     z-index: 0;
     transform: translateY(-50%);
-   animation: rotate 5s linear infinite;
+   animation: hex-scroll 5s linear infinite;
+   transform-origin: 0px 0px;
 }
-@keyframes rotate {
-  from {rotate: 0deg;}
-  to {top: 360deg;}
-}
+
+@keyframes hex-scroll {
+  from {
+    transform: rotate(179.858074deg);
+  }
+
+  to {
+    transform: rotate(539.858074deg);
+    /* +360 */
+  }
+  }
 
 /* =========================================================
    IMAGE DECORATIVE LINE
