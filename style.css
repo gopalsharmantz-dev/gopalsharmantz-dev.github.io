@@ -696,8 +696,8 @@ p {
    animation: rotate 5s linear infinite;
 }
 @keyframes rotate {
-  from {top: 0px;}
-  to {top: 200px;}
+  from {rotate: 0deg;}
+  to {top: 360deg;}
 }
 
 /* =========================================================
