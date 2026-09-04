@@ -316,7 +316,7 @@ p {
 }
 
 .hero h1 {
-    font-family: "Space Grotesk",sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     font-size: clamp(50px,8vw,90px);
     line-height: 0.98;
     letter-spacing: -4.5px;
