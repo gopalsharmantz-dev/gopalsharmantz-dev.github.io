@@ -212,7 +212,6 @@ p {
     left: -180px;
     top: 80px;
     background: #0D47A1;
-    opacity: 0.20;
     filter: blur(150px);
     border-radius: 50%;
     z-index: -1;
