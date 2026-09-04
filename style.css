@@ -290,6 +290,7 @@ p {
     overflow: hidden;
     isolation: isolate;
     padding-top: var(--nav-height);
+    padding: 160px 0 80px;
 }
 
 
