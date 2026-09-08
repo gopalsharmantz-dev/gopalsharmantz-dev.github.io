@@ -311,9 +311,7 @@ p {
     animation: blueGlow 8s ease-in-out infinite alternate;
 }
 
-
 /* RIGHT BLUE GLOW */
-
 .hero::after {
     content: "";
     position: absolute;
@@ -345,7 +343,6 @@ p {
     position: relative;
 }
 
-
 /* =========================================================
    HERO CONTENT - LEFT
 ========================================================= */
@@ -361,36 +358,29 @@ p {
         both;
 }
 
-
 /* =========================================================
    BADGE
 ========================================================= */
 
 .badge {
     display: inline-flex;
-
     align-items: center;
-
     padding: 7px 15px;
-
     border: 1px solid rgba(33, 150, 243, 0.30);
-
     border-radius: 30px;
-
     color: var(--secondary);
-
     background: rgba(33, 150, 243, 0.08);
-
     font-size: 13px;
     font-weight: 600;
-
     margin-bottom: 22px;
-
     animation:
         badgeReveal 0.8s
         ease 0.15s both;
 }
-
+.project-image img {
+    height: 250px;
+    object-fit: cover;
+}
 .badge::before {
     content: "";
 
