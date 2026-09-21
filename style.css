@@ -6,27 +6,27 @@
 ========================================================= */
 
 :root {
-    --bg: #080b12;
-    --bg-soft: #0b1018;
+    --bg: #FAFAF7;
+    --bg-soft: #F4F7F3;
 
-    --card: #101621;
-    --card2: #141b28;
+    --card: #FFFFFF;
+    --card2: #EEF4EF;
 
-    --text: #f7f8fc;
-    --muted: #98a2b3;
-    --muted-light: #b8c0cf;
+    --text: #1E2923;
+    --muted: #66736B;
+    --muted-light: #526158;
 
-    --primary: #2196f3;
-    --primary-dark: #0d47a1;
-    --secondary: #90caf9;
+    --primary: #315C45;
+    --primary-dark: #1F4935;
+    --secondary: #8FAF98;
 
-    --border: rgba(255, 255, 255, 0.08);
+    --border: rgba(49, 92, 69, 0.14);
 
     --gradient: linear-gradient(
         100deg,
-        #0d47a1 0%,
-        #2196f3 50%,
-        #90caf9 100%
+        #1F4935 0%,
+        #315C45 50%,
+        #8FAF98 100%
     );
 
     --max-width: 1150px;
@@ -141,21 +141,15 @@ p {
 
 .navbar {
     position: fixed;
-
     top: 0;
     left: 0;
-
     width: 100%;
     height: var(--nav-height);
-
     z-index: 1000;
-
-    background: rgba(8, 11, 18, 0.82);
-
+    background: rgba(250, 250, 247, 0.88);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-
-    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    border-bottom: 1px solid rgba(49, 92, 69, 0.10);
 }
 
 .nav-inner {
@@ -213,12 +207,9 @@ p {
 
 .nav-links a {
     position: relative;
-
-    color: #929bac;
-
+    color: #526158;
     font-size: 14px;
     font-weight: 600;
-
     transition:
         color 0.25s ease,
         transform 0.25s ease;
@@ -226,25 +217,19 @@ p {
 
 .nav-links a::after {
     content: "";
-
     position: absolute;
-
     left: 0;
     bottom: -8px;
-
     width: 0;
     height: 2px;
-
     border-radius: 5px;
-
     background: var(--gradient);
-
     transition: width 0.3s ease;
 }
 
 .nav-links a:hover,
 .nav-links a.active {
-    color: #fff;
+    color: #315C45;
 }
 
 .nav-links a:hover::after,
@@ -257,23 +242,17 @@ p {
 
 .menu-btn {
     display: none;
-
     border: 0;
     outline: 0;
-
     background: transparent;
-
-    color: #fff;
-
+    color: #315C45;
     font-size: 28px;
-
     cursor: pointer;
-
     transition: 0.3s ease;
 }
 
 .menu-btn:hover {
-    color: var(--primary);
+    color: #1F4935;
     transform: scale(1.05);
 }
 
@@ -303,15 +282,14 @@ p {
     height: 600px;
     left: -250px;
     top: 100px;
-    background: #0d47a1;
+    background: #315C45;
     filter: blur(160px);
-    opacity: 0.8;
+    opacity: 0.14;
     border-radius: 50%;
     z-index: -2;
     animation: blueGlow 8s ease-in-out infinite alternate;
 }
 
-/* RIGHT BLUE GLOW */
 .hero::after {
     content: "";
     position: absolute;
@@ -319,14 +297,13 @@ p {
     height: 500px;
     right: -200px;
     bottom: -150px;
-    background: #2196f3;
-    opacity: 0.15;
+    background: #8FAF98;
+    opacity: 0.18;
     filter: blur(150px);
     border-radius: 50%;
     z-index: -2;
     animation: cyanGlow 9s ease-in-out infinite alternate;
 }
-
 /* =========================================================
    HERO TWO COLUMN
 ========================================================= */
@@ -427,23 +404,18 @@ p {
     background:
         linear-gradient(
             90deg,
-            #0d47a1,
-            #2196f3,
-            #90caf9,
-            #2196f3,
-            #0d47a1
+            #1F4935,
+            #315C45,
+            #8FAF98,
+            #315C45,
+            #1F4935
         );
-
     background-size: 300% 100%;
-
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
     background-clip: text;
-
     animation: gradientMove 6s ease infinite;
 }
-
 
 /* =========================================================
    HERO SUBTITLE
@@ -546,24 +518,24 @@ p {
 .btn-primary:hover {
     transform: translateY(-4px);
     box-shadow:
-        0 18px 40px rgba(33, 150, 243, 0.28);
+        0 18px 40px rgba(49, 92, 69, 0.25);
 }
 
 
 /* OUTLINE BUTTON */
 
-.btn-outline {
-    border: 1px solid rgba(255, 255, 255, 0.11);
-    color: #e6eaf2;
-    background: rgba(255, 255, 255, 0.02);
+..btn-outline {
+    border: 1px solid rgba(49, 92, 69, 0.22);
+    color: #315C45;
+    background: transparent;
 }
 
 .btn-outline:hover {
     transform: translateY(-4px);
-    border-color: rgba(33, 150, 243, 0.55);
-    background: rgba(33, 150, 243, 0.06);
+    border-color: #315C45;
+    background: #EEF4EF;
     box-shadow:
-        0 12px 30px rgba(33, 150, 243, 0.08);
+        0 12px 30px rgba(49, 92, 69, 0.10);
 }
 
 /* =========================================================
@@ -635,27 +607,20 @@ p {
 
 .hero_img_glow {
     position: absolute;
-
     width: 480px;
     height: 480px;
-
     right: 10px;
     top: 100px;
-
     border-radius: 50%;
-
     background:
         radial-gradient(
             circle,
-            rgba(33, 150, 243, 0.40) 0%,
-            rgba(13, 71, 161, 0.20) 35%,
+            rgba(49, 92, 69, 0.25) 0%,
+            rgba(143, 175, 152, 0.18) 35%,
             transparent 72%
         );
-
     filter: blur(25px);
-
     z-index: 1;
-
     animation:
         imageGlow 5s ease-in-out infinite alternate;
 }
@@ -674,13 +639,12 @@ p {
     top: 50%;
     border-radius: 50%;
     background: radial-gradient(
-            circle at 40% 35%,
-            rgba(33, 150, 243, 0.35),
-            rgba(13, 71, 161, 0.10) 55%,
-            transparent 72%
-        );
-    border: 1px solid
-        rgba(33, 150, 243, 0.12);
+        circle at 40% 35%,
+        rgba(49, 92, 69, 0.22),
+        rgba(143, 175, 152, 0.10) 55%,
+        transparent 72%
+    );
+    border: 1px solid rgba(49, 92, 69, 0.12);
     z-index: 0;
     transform: translateY(-50%);
    animation: hex-scroll 5s linear infinite;
@@ -826,83 +790,58 @@ section {
     background:
         linear-gradient(
             145deg,
-            rgba(255, 255, 255, 0.035),
-            rgba(255, 255, 255, 0.01)
+            rgba(255, 255, 255, 0.95),
+            rgba(238, 244, 239, 0.65)
         ),
         var(--card);
-
-    border:
-        1px solid
-        rgba(255, 255, 255, 0.07);
-
+    border: 1px solid rgba(49, 92, 69, 0.12);
     border-radius: 18px;
-
     padding: 30px;
-
     overflow: hidden;
-
     opacity: 0;
-
     animation:
         cardReveal 0.7s ease forwards;
-
     transition:
         transform 0.35s ease,
         border-color 0.35s ease,
         box-shadow 0.35s ease;
 }
 
-.card::before {
-    content: "";
-
-    position: absolute;
-
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 2px;
-
-    background: var(--gradient);
-
-    transform: scaleX(0);
-
-    transform-origin: left;
-
-    transition: transform 0.4s ease;
+.card:hover {
+    transform: translateY(-8px);
+    border-color:
+        rgba(49, 92, 69, 0.35);
+    box-shadow:
+        0 20px 50px rgba(31, 73, 53, 0.10),
+        0 0 35px rgba(49, 92, 69, 0.06);
 }
 
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--gradient);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
 .card:hover::before {
     transform: scaleX(1);
 }
-
-.card:hover {
-    transform: translateY(-8px);
-
-    border-color:
-        rgba(33, 150, 243, 0.40);
-
-    box-shadow:
-        0 20px 50px rgba(0, 0, 0, 0.30),
-        0 0 35px rgba(33, 150, 243, 0.07);
-}
-
 .card h3 {
     font-size: 21px;
-
     margin-bottom: 12px;
-
     letter-spacing: -0.4px;
 }
 
 .card p {
     color: var(--muted);
-
     font-size: 15px;
-
     line-height: 1.75;
 }
-
 
 /* =========================================================
    ABOUT
@@ -1129,23 +1068,13 @@ section {
 .contact-icon {
     width: 45px;
     height: 45px;
-
     flex-shrink: 0;
-
     border-radius: 10px;
-
-    background:
-        rgba(33, 150, 243, 0.10);
-
+    background: rgba(49, 92, 69, 0.08);
     display: grid;
-
     place-items: center;
-
     color: var(--primary);
-
-    border:
-        1px solid
-        rgba(33, 150, 243, 0.10);
+    border: 1px solid rgba(49, 92, 69, 0.12);
 }
 
 .contact-item small {
