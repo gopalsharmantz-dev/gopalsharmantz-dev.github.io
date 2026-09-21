@@ -9,13 +9,25 @@
 </head>
 
 <body>
-
 <nav class="navbar">
     <div class="container nav-inner">
-        <a href="index.html" class="logo"><img src="Logo.png"></a>
+        <a href="index.html" class="logo">
+            <img src="Logo.png" alt="Gopal Sharma">
+        </a>
+        <div class="nav-actions">
+            <!-- Theme Toggle -->
+            <button class="theme-toggle"
+                    id="theme-toggle"
+                    type="button"
+                    aria-label="Toggle dark mode">
+                <span class="theme-icon">☾</span>
+            </button>
 
-        <button class="menu-btn">☰</button>
-
+            <!-- Mobile Menu -->
+            <button class="menu-btn"
+                    type="button"
+                    aria-label="Open menu">☰</button>
+        </div>
         <ul class="nav-links">
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -23,6 +35,7 @@
             <li><a href="projects.html">Projects</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
+
     </div>
 </nav>
 
